@@ -24,7 +24,6 @@ pipeline {
         stage('Build') {
             steps {
                 sh "cat $CRED | tee credentials"
-                sh "cat $CONFIG | tee config"
                 sh "docker build -t aws ."
             }
         }
