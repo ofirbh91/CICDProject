@@ -1,4 +1,4 @@
-FROM FROM python:3.8-slim
+FROM python:3.8-slim
 
 ARG USER=boto
 
