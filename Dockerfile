@@ -5,6 +5,8 @@ ARG USER=boto
 RUN useradd -ms /bin/bash ${USER}
 USER ${USER}
 
+EXPOSE 8081:8081
+
 WORKDIR /home/${USER}
 
 COPY . .
