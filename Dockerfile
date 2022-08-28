@@ -1,4 +1,4 @@
-FROM python:3.8-slim
+FROM alpine:3.16
 
 ARG USER=boto
 
