@@ -4,7 +4,7 @@ pipeline {
         string defaultValue: '300', name: 'INTERVAL'
     }
     environment {
-        CRED = credentials('cred')
+        CRED = credentials('CRED')
     }
 
     stages {
