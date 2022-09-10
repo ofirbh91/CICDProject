@@ -18,7 +18,6 @@ def scan_ec2():
 
 
 interval = os.environ.get('Interval')
-interval=5
 if interval == None:
     scan_ec2()
 else:
