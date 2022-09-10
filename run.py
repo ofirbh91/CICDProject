@@ -24,6 +24,10 @@ if interval == None:
 else:
     while True:
         scan_ec2()
+         print("Id: {0}\nPlatform: {1}\nType: {2}\nPublic IPv4: {3}\nAMI: {4}\nState: {5}\nTags: {6}\n".format(
+                        instance.id, instance.platform, instance.instance_type, instance.public_ip_address,
+                        instance.image.id, instance.state, instance.tags))
+
         print("Program wait for {0} seconds.".format(interval))
         time.sleep(int(interval))
 
